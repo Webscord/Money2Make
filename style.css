@@ -1,0 +1,531 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+body {
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #1f1f1f; /* Black-gray box background */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc; /* Light gray text color */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #666; /* Medium gray border */
+    background-color: #222; /* Dark gray input background */
+    color: #fff; /* White text color */
+}
+
+.captcha {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styles */
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* Features section styles */
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 1.1em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('1.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styles */
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* Animation for welcome text */
+.slide-in {
+    animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Add spacing between paragraphs */
+.about p {
+    margin-bottom: 20px;
+}
+
+/* Add spacing between sections */
+.about {
+    padding: 50px 0;
+}
+
+/* Add spacing between team members */
+.team-members {
+    margin-top: 30px;
+}
+
+.team-members .member {
+    margin-bottom: 30px;
+}
+/* Add spacing between services */
+.services .service {
+    margin-bottom: 50px;
+}
+
+/* Add spacing between service titles and descriptions */
+.services .service h3 {
+    margin-bottom: 10px;
+}
+
+/* Add spacing between service descriptions and lists */
+.services .service p {
+    margin-bottom: 15px;
+}
+
+/* Add spacing between list items */
+.services .service ul {
+    padding-left: 20px;
+}
+
+.services .service ul li {
+    margin-bottom: 5px;
+}
+
+.contact-methods a {
+    color: blue; /* Set link color to blue */
+    text-decoration: underline; /* Add underline to links */
+}
+
+.contact-methods a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('1.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the container */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: auto; /* Push the logo to the left */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Login button */
+.login-button {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #00008b; /* Darker blue color on hover */
+}
+/* Additional styles for the contact page */
+.contact {
+    padding: 50px 0; /* Add padding to the contact section */
+}
+
+.contact h2 {
+    margin-bottom: 20px; /* Add margin below the contact section heading */
+}
+
+.contact p {
+    margin-bottom: 20px; /* Add margin below paragraphs in the contact section */
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.contact-method {
+    width: 50%; /* Make each contact method take up half of the container */
+    margin-bottom: 20px; /* Add margin between contact methods */
+}
+
+.contact-method h3 {
+    margin-bottom: 10px; /* Add margin below headings in the contact methods */
+}
+
+.contact-method p {
+    margin-bottom: 10px; /* Add margin below paragraphs in the contact methods */
+}
+
+.contact-method ul {
+    margin-top: 10px; /* Add margin above the social media links */
+}
+
+.contact-method ul li {
+    margin-bottom: 5px; /* Add margin between social media links */
+}
+/* Add this CSS to style.css */
+
+/* General styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.login-button {
+    margin-left: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align items */
+    }
+
+    nav {
+        margin-top: 20px; /* Add spacing between header and nav on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove right margin for menu items */
+        margin-bottom: 10px; /* Add bottom margin for menu items */
+    }
+
+    .login-button {
+        margin-left: 0; /* Reset margin for login button */
+    }
+}
+/* Additional CSS for the hero section background */

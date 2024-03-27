@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
     <meta charset="utf-8">
-    <meta name="description" content="The best website to learn how to make money.">
+    <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. More that 500 hours of courses.">
     <meta name="keywords" content="Website, money, argent">
     <meta name="author" content="Felosi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#07A0D6">
-    <link rel="shortcut icon" href="4.png" type="image/gif">
+    <link rel="shortcut icon" href="112.png" type="image/gif">
+
+    <!-- Open Graph Protocol -->
     <meta property="og:url" content="index.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Money2Make">
-    <meta property="og:description" content="The best website to learn how to make money.">
-    <meta property="og:image" content="1.jpg">
-    <meta property="og:site_name" content="github.io">
-     <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. More that 500 hours of courses.">
+    <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
 
-      <link rel="icon" type="image/png" sizes="300x250" href="4.png">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
-     </head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money2Make</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Additional styles for dynamic image and footer */
+        .dynamic-image-container {
+            border: 2px solid #07A0D6;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 60%; /* Adjust the box size */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dynamic-image {
+            max-width: 100%;
+            height: auto;
+        }
+      footer {
+          background-color: #383434; /* Grey color */
+          padding: 20px;
+          text-align: center;
+          margin-top: 20px;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+      }
+      footer p {
+          margin: 0;
+      }
+    </style>
 </head>
-</body>
+<body>
   <header>
       <div class="container">
           <nav>
-              <h1 class="logo">Money2Make</h1>
+              <h1 class="logo"><img src="113.png" alt="Money2Make Logo" style="width: 250px;"></h1>
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="courses.html">Courses</a></li>
@@ -49,21 +68,82 @@
   </header>
 
 
+<section class="hero">
+    <div class="container">
+        <h2 class="animate">Learn how to make money.</h2>
+        <p>Discover the wonders of the best website ever.</p>
+        <a href="courses.html" class="btn">Learn More</a>
+    </div>
+</section>
 
+<section class="about">
+    <div class="container">
+        <h2>About Money2Make</h2>
+        <p>Money2Make is your ultimate destination to learn various strategies and techniques to make money. Our platform offers a wide range of resources, including comprehensive courses, expert advice, and practical tips, designed to empower individuals from all walks of life to achieve financial success.</p>
+        <p>Whether you're a beginner exploring the basics of personal finance, an entrepreneur seeking to grow your business, or an investor looking for profitable opportunities, Money2Make has something for everyone. Our team of experienced professionals curates the latest insights and industry trends to provide you with actionable knowledge and valuable insights.</p>
+        <p>At Money2Make, we believe that financial literacy is the key to unlocking a brighter future. By equipping yourself with the right skills and knowledge, you can take control of your finances, build wealth, and create the life you desire. Join us on this journey towards financial independence and start making your money work for you!</p>
+          <h2>Explore More</h2>
+          <p>Check out our diverse range of courses and resources to enhance your financial knowledge and skills. From investing in stocks to launching a successful startup, we've got you covered. Take the first step towards financial freedom today!</p>
+  </section>
+  
+<section class="dynamic-image-container">
+    <img src="111.png" alt="Dynamic Image" class="dynamic-image">
+</section>
+  </div>
+  
+  </div>
+<footer>
+    <div class="container">
+        <p>Disclaimer: Money2Make doesn’t guarantee any profits or financial success. It is for education purposes only.</p>
+    </div>
+    <div class="container">
+        <p>Email: info@money2make.com</p>
+        <p>Total Views: <span id="total-views">0</span></p>
+    </div>
+</footer>
 
+<script>
+    // Function to set a cookie
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
 
-    <section class="hero">
-        <div class="container">
-            <h2 class="animate">Learn how to make money.</h2>
-            <p>Discover the wonders of the best website ever.</p>
-            <a href="courses.html" class="btn">Learn More</a>
-        </div>
-    </section>
+    // Function to get a cookie value
+    function getCookie(cname) {
+        const name = cname + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
 
-    <script>
-        // Add animation to welcome text
-        const welcomeText = document.querySelector('.animate');
-        welcomeText.classList.add('slide-in');
-    </script>
+    // Function to check if the cookie exists and update views accordingly
+    function checkCookie() {
+        let views = getCookie("views");
+        if (views !== "") {
+            views = parseInt(views);
+            views++;
+        } else {
+            views = 1;
+        }
+        setCookie("views", views, 365); // Set or update the cookie
+        document.getElementById('total-views').textContent = views; // Update the total views in the footer
+    }
+
+    // Call the function to check and update the view count
+    checkCookie();
+</script>
+
 </body>
 </html>

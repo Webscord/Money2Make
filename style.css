@@ -271,7 +271,7 @@ nav ul li {
 
 /* Login button */
 .login-button {
-    background-color: blue;
+    background-color: #007bff;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;

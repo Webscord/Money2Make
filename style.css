@@ -26,7 +26,7 @@ body {
 
 .login-btn {
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -56,7 +56,7 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #007bff; /* Blue button color */
-    color: #fff; /* White button text color */
+    color: #ffffff; /* White button text color */
     cursor: pointer;
 }
 
@@ -181,7 +181,7 @@ header nav ul li {
 .btn {
     display: inline-block;
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -272,7 +272,7 @@ nav ul li {
 /* Login button */
 .login-button {
     background-color: blue;
-    color: #007bff;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
 }

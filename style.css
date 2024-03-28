@@ -180,7 +180,7 @@ header nav ul li {
 
 .btn {
     display: inline-block;
-    background-color: #ff4f00;
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -190,7 +190,7 @@ header nav ul li {
 }
 
 .btn:hover {
-    background-color: #ff6600;
+    background-color: #0056b3;
 }
 
 /* Animation for welcome text */
@@ -272,13 +272,13 @@ nav ul li {
 /* Login button */
 .login-button {
     background-color: blue;
-    color: #fff;
+    color: #007bff;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 .login-button:hover {
-    background-color: #00008b; /* Darker blue color on hover */
+    background-color: #0056b3; /* Darker blue color on hover */
 }
 
 /* General styles */

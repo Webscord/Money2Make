@@ -1,8 +1,8 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 500 hours of courses.">
+    <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. More that 1000 hours of courses.">
     <meta name="keywords" content="Website, money, argent">
     <meta name="author" content="Felosi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,8 @@
     <meta property="og:url" content="index.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Money2Make">
-    <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 500 hours of courses.">
-    <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
+    <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. More that 500 hours of courses.">
+    <meta property="og:image" content="112.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
 
     <title>Money2Make</title>
     <link rel="stylesheet" href="index.css">
@@ -51,6 +51,26 @@
       footer p {
           margin: 0;
       }
+      .footer-links {
+          margin-bottom: 20px;
+      }
+
+      .footer-links a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 10px;
+          transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+          color: #07A0D6;
+      }
+
+      /* Add hover effect for home and courses links */
+      header nav ul li:nth-child(1):hover a,
+      header nav ul li:nth-child(2):hover a {
+          color: blue;
+      }
     </style>
 </head>
 <body>
@@ -61,7 +81,7 @@
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="courses.html">Courses</a></li>
-                  <li><a href="https://discord.gg/6hqBxQgfgg" class="login-button">Server</a></li>
+                <li><a href="https://discord.gg/ZSeKmxu4WJ" class="login-button" target="_blank">Server</a></li>
               </ul>
           </nav>
       </div>
@@ -85,69 +105,28 @@
           <h2>Explore More</h2>
           <p>Check out our diverse range of courses and resources to enhance your financial knowledge and skills. From investing in stocks to launching a successful startup, we've got you covered. Take the first step towards financial freedom today!</p>
   </section>
-  
+
 <section class="dynamic-image-container">
     <img src="111.png" alt="Dynamic Image" class="dynamic-image">
 </section>
   </div>
-  
+
   </div>
-<footer>
-    <div class="container">
-        <p>Disclaimer: Money2Make doesn’t guarantee any profits or financial success. It is for education purposes only.</p>
-    </div>
-    <div class="container">
-        <p>Email: info.money2make@gmail.com</p>
-        <p>How many time you visited the website: <span id="total-views">0</span></p>
-    </div>
-</footer>
+  <footer>
+      <div class="container">
+          <div class="footer-links">
+              <a href="terms.html" target="_blank">Terms of Service</a>
+              <a href="privacy.html" target="_blank">Privacy Policy</a>
+              <a href="contact.html" target="_blank">Contact Us</a>
+              <a href="https://discord.gg/ZSeKmxu4WJ" target="_blank">Discord</a>
+          </div>
+      </div>
+  </footer>
 
-<script>
-    // Function to set a cookie
-    function setCookie(cname, cvalue, exdays) {
-        const d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        const expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-
-    // Function to get a cookie value
-    function getCookie(cname) {
-        const name = cname + "=";
-        const decodedCookie = decodeURIComponent(document.cookie);
-        const ca = decodedCookie.split(';');
-        for (let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-
-    // Function to check if the cookie exists and update views accordingly
-    function checkCookie() {
-        let views = getCookie("views");
-        if (views !== "") {
-            views = parseInt(views);
-            views++;
-        } else {
-            views = 1;
-        }
-        setCookie("views", views, 365); // Set or update the cookie
-        document.getElementById('total-views').textContent = views; // Update the total views in the footer
-    }
-
-    // Call the function to check and update the view count
-    checkCookie();
-</script>
-    <script>
-        // Add animation to welcome text
-        const welcomeText = document.querySelector('.animate');
-        welcomeText.classList.add('slide-in');
-    </script>
+  <script>
+      // Add animation to welcome text
+      const welcomeText = document.querySelector('.animate');
+      welcomeText.classList.add('slide-in');
+  </script>
 </body>
 </html>

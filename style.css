@@ -50,42 +50,6 @@ body {
     height: 100vh;
 }
 
-.login-box {
-    background-color: #1f1f1f; /* Black-gray box background */
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-.login-box h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff; /* White text color */
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #ccc; /* Light gray text color */
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #666; /* Medium gray border */
-    background-color: #222; /* Dark gray input background */
-    color: #fff; /* White text color */
-}
-
-.captcha {
-    text-align: center;
-}
-
 button {
     width: 100%;
     padding: 10px;
@@ -104,12 +68,6 @@ button:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
 }
 
 .container {
@@ -145,7 +103,7 @@ header nav ul li {
 
 /* Hero section styles */
 .hero {
-    background-image: url('1.jpg');
+    background-image: url('1.gif');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -161,63 +119,6 @@ header nav ul li {
 .hero p {
     font-size: 1.2em;
     margin-bottom: 40px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ff4f00;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ff6600;
-}
-
-/* Features section styles */
-.features {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2.5em;
-    margin-bottom: 50px;
-}
-
-.feature {
-    margin-bottom: 40px;
-}
-
-.feature h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.feature p {
-    font-size: 1.1em;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    background-color: #222;
-    color: #ccc;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 1.1em;
-}
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* Global styles */
@@ -317,65 +218,11 @@ header nav ul li {
     padding: 50px 0;
 }
 
-/* Add spacing between team members */
-.team-members {
-    margin-top: 30px;
-}
-
-.team-members .member {
-    margin-bottom: 30px;
-}
-/* Add spacing between services */
-.services .service {
-    margin-bottom: 50px;
-}
-
-/* Add spacing between service titles and descriptions */
-.services .service h3 {
-    margin-bottom: 10px;
-}
-
-/* Add spacing between service descriptions and lists */
-.services .service p {
-    margin-bottom: 15px;
-}
-
-/* Add spacing between list items */
-.services .service ul {
-    padding-left: 20px;
-}
-
-.services .service ul li {
-    margin-bottom: 5px;
-}
-
-.contact-methods a {
-    color: blue; /* Set link color to blue */
-    text-decoration: underline; /* Add underline to links */
-}
-
-.contact-methods a:hover {
-    text-decoration: none; /* Remove underline on hover */
-}
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Global styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-image: url('1.webp'); /* Background image */
+    background-image: url('1.jpg'); /* Background image */
     background-size: cover;
     background-position: center;
 }
@@ -433,45 +280,6 @@ nav ul li {
 .login-button:hover {
     background-color: #00008b; /* Darker blue color on hover */
 }
-/* Additional styles for the contact page */
-.contact {
-    padding: 50px 0; /* Add padding to the contact section */
-}
-
-.contact h2 {
-    margin-bottom: 20px; /* Add margin below the contact section heading */
-}
-
-.contact p {
-    margin-bottom: 20px; /* Add margin below paragraphs in the contact section */
-}
-
-.contact-methods {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-}
-
-.contact-method {
-    width: 50%; /* Make each contact method take up half of the container */
-    margin-bottom: 20px; /* Add margin between contact methods */
-}
-
-.contact-method h3 {
-    margin-bottom: 10px; /* Add margin below headings in the contact methods */
-}
-
-.contact-method p {
-    margin-bottom: 10px; /* Add margin below paragraphs in the contact methods */
-}
-
-.contact-method ul {
-    margin-top: 10px; /* Add margin above the social media links */
-}
-
-.contact-method ul li {
-    margin-bottom: 5px; /* Add margin between social media links */
-}
-/* Add this CSS to style.css */
 
 /* General styles */
 .container {
@@ -528,4 +336,3 @@ nav ul li {
         margin-left: 0; /* Reset margin for login button */
     }
 }
-/* Additional CSS for the hero section background */

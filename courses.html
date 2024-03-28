@@ -123,11 +123,6 @@
       .footer-links a:hover {
           color: #07A0D6;
       }
-              /* Add hover effect for home and courses links */
-      header nav ul li:nth-child(1):hover a,
-      header nav ul li:nth-child(2):hover a {
-          color: blue;
-      }
     </style>
 </head>
 <body>
@@ -241,39 +236,44 @@
       </div>
   </footer>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Actual data values
-        var actualNumCourses = 74;
-        var actualTotalHours = 1000;
-        var actualNumCategories = 9;
+      document.addEventListener("DOMContentLoaded", function() {
+          // Actual data values
+          var actualNumCourses = 75;
+          var actualTotalHours = 1000;
+          var actualNumCategories = 9;
 
-        // Initial values for countdown
-        var currentNumCourses = 100;
-        var currentTotalHours = 2000;
-        var currentNumCategories = 20;
+          // Initial values for countdown
+          var currentNumCourses = 0;
+          var currentTotalHours = 0;
+          var currentNumCategories = 0;
 
-        // Update statistics countdown
-        var interval = setInterval(function() {
-            // Update numbers gradually
-            currentNumCourses -= Math.ceil((100 - actualNumCourses) / 10);
-            currentTotalHours -= Math.ceil((2000 - actualTotalHours) / 10);
-            currentNumCategories -= Math.ceil((15 - actualNumCategories) / 10);
+          // Calculate step increment
+          var stepNumCourses = Math.ceil(actualNumCourses / 10);
+          var stepTotalHours = Math.ceil(actualTotalHours / 10);
+          var stepNumCategories = Math.ceil(actualNumCategories / 10);
 
-            // Stop the interval when numbers reach their actual values
-            if (currentNumCourses <= actualNumCourses && currentTotalHours <= actualTotalHours && currentNumCategories <= actualNumCategories) {
-                clearInterval(interval);
-                currentNumCourses = actualNumCourses;
-                currentTotalHours = actualTotalHours;
-                currentNumCategories = actualNumCategories;
-            }
+          // Update statistics count up
+          var interval = setInterval(function() {
+              // Update numbers gradually
+              currentNumCourses += stepNumCourses;
+              currentTotalHours += stepTotalHours;
+              currentNumCategories += stepNumCategories;
 
-            // Update statistics on the page
-            document.getElementById("numCourses").innerText = currentNumCourses;
-            document.getElementById("totalHours").innerText = currentTotalHours;
-            document.getElementById("numCategories").innerText = currentNumCategories;
-        }, 100);
-    });
-  
+              // Stop the interval when numbers reach their actual values
+              if (currentNumCourses >= actualNumCourses && currentTotalHours >= actualTotalHours && currentNumCategories >= actualNumCategories) {
+                  clearInterval(interval);
+                  currentNumCourses = actualNumCourses;
+                  currentTotalHours = actualTotalHours;
+                  currentNumCategories = actualNumCategories;
+              }
+
+              // Update statistics on the page
+              document.getElementById("numCourses").innerText = currentNumCourses;
+              document.getElementById("totalHours").innerText = currentTotalHours;
+              document.getElementById("numCategories").innerText = currentNumCategories;
+          }, 100);
+      });
   </script>
+
   </body>
   </html>

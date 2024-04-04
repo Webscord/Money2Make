@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Débloquez votre potentiel financier. Le meilleur site web pour apprendre à gagner de l'argent. Il y a plus de 1000 heures de formations.">
+    <meta name="keywords" content="Site web, argent">
+    <meta name="author" content="Felosi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07A0D6">
+    <link rel="shortcut icon" href="112.png" type="image/gif">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Money2Make">
+    <meta property="og:description" content="Débloquez votre potentiel financier. Le meilleur site web pour apprendre à gagner de l'argent. Il y a plus de 1000 heures de formations.">
+    <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Remplacez "votre_image_url_ici.jpg" par l'URL de votre image -->
+
+    <title>Cours - Money2Make</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <style>
+        /* Styles supplémentaires pour la bannière */
+        .banner-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Ajustez la largeur maximale selon les besoins */
+            margin: 20px auto; /* Centrez la bannière et ajoutez de l'espace depuis le haut */
+            overflow: hidden; /* Masquez le contenu qui dépasse */
+            border: 2px solid #ccc; /* Bordure de la boîte */
+            border-radius: 10px; /* Coins arrondis pour la boîte */
+        }
+
+        .banner-image {
+            width: 100%; /* Largeur totale pour l'image */
+            height: auto; /* Conserver le ratio d'aspect */
+            display: block;
+        }
+
+        .banner-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .banner-content .text {
+            width: 50%;
+            float: left;
+        }
+
+        .banner-content .button {
+            width: 50%;
+            float: right;
+            text-align: right;
+        }
+
+        .banner-content .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff; /* Couleur de fond du bouton */
+            color: #000; /* Couleur du texte du bouton */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .banner-content .button a:hover {
+            background-color: #000; /* Couleur de fond au survol */
+            color: #fff; /* Couleur du texte au survol */
+        }
+
+        /* Ajustement de la marge pour l'en-tête */
+        header {
+            margin-bottom: 20px;
+        }
+      .stats {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 20px auto;
+          max-width: 800px; /* Ajustez la largeur maximale selon les besoins */
+      }
+
+      .stats p {
+          font-size: 20px; /* Ajustez la taille de la police selon les besoins */
+          margin: 0;
+      }
+
+      .stats span {
+          font-size: 24px; /* Ajustez la taille de la police selon les besoins */
+      }
+      footer {
+          background-color: #383434; /* Couleur grise */
+          padding: 20px;
+          text-align: center;
+          margin-top: 20px;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+      }
+      footer p {
+          margin: 0;
+      }
+      .footer-links {
+          margin-bottom: 20px;
+      }
+
+      .footer-links a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 10px;
+          transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+          color: #07A0D6;
+      }
+              /* Ajouter un effet de survol pour les liens d'accueil et de cours */
+      header nav ul li:nth-child(1):hover a,
+      header nav ul li:nth-child(2):hover a {
+          color: blue;
+      }
+      /* Styles du bouton flottant */
+      .language-toggle {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          background-color: #07A0D6;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+          cursor: pointer;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+      }
+    </style>
+</head>
+<body>
+  <header>
+      <div class="container">
+          <nav>
+              <h1 class="logo"><img src="113.png" alt="Logo Money2Make" style="width: 250px;"></h1>
+              <ul>
+                  <li><a href="https://money2make.github.io/fr/">Accueil</a></li>
+                  <li><a href="https://money2make.github.io/fr/courses">Cours</a></li>
+                  <li><a href="https://discord.gg/ZSeKmxu4WJ" class="login-button" target="_blank">Serveur</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <div class="stats">
+      <p>Nombre de cours : <span id="numCourses">XX</span></p>
+      <p>Heures totales : +<span id="totalHours">XXXX</span></p>
+      <p>Nombre de catégories : <span id="numCategories">X</span></p>
+  </div>
+
+  <div class="banner-container">
+    <img src="5.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Entreprenariat</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/entreprenariat'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="6.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Bourse</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/bourse'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="7.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Immobilier</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/immobilier'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="8.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Trading</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/trading'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="9.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>E-Commerce</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/ecommerce'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="10.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>SMMA</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/smma'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="12.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Gym</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/gym'" style="float: left;">Aller</button>
+    </div>
+  </div>
+  <div class="banner-container">
+    <img src="13.png" alt="Image de bannière" class="banner-image">
+    <div class="banner-content">
+      <div class="text">
+        <h1>Argent Lent</h1>
+      </div>
+      <button onclick="window.location.href='https://money2make.github.io/argentlent'" style="float: left;">Aller</button>
+    </div>
+    </div>
+    <div class="banner-container">
+      <img src="11.png" alt="Image de bannière" class="banner-image">
+      <div class="banner-content">
+        <div class="text">
+          <h1>Autre</h1>
+        </div>
+        <button onclick="window.location.href='https://money2make.github.io/autre'" style="float: left;">Aller</button>
+      </div>
+  </div>
+  <footer>
+      <div class="container">
+          <div class="footer-links">
+              <a href="https://money2make.github.io/fr/terms" target="_blank">Conditions d'utilisation</a>
+              <a href="https://money2make.github.io/fr/privacy" target="_blank">Politique de confidentialité</a>
+              <a href="https://money2make.github.io/fr/contact" target="_blank">Contactez-nous</a>
+              <a href="https://discord.gg/ZSeKmxu4WJ" target="_blank">Discord</a>
+          </div>
+      </div>
+  </footer>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Valeurs de données réelles
+          var actualNumCourses = 75;
+          var actualTotalHours = 1000;
+          var actualNumCategories = 9;
+
+          // Valeurs initiales pour le décompte
+          var currentNumCourses = 0;
+          var currentTotalHours = 0;
+          var currentNumCategories = 0;
+
+          // Calcul de l'incrément de pas
+          var stepNumCourses = Math.ceil(actualNumCourses / 10);
+          var stepTotalHours = Math.ceil(actualTotalHours / 10);
+          var stepNumCategories = Math.ceil(actualNumCategories / 10);
+
+          // Mettre à jour les statistiques en comptant
+          var interval = setInterval(function() {
+              // Mettre à jour les nombres progressivement
+              currentNumCourses += stepNumCourses;
+              currentTotalHours += stepTotalHours;
+              currentNumCategories += stepNumCategories;
+
+              // Arrêter l'intervalle lorsque les nombres atteignent leurs valeurs réelles
+              if (currentNumCourses >= actualNumCourses && currentTotalHours >= actualTotalHours && currentNumCategories >= actualNumCategories) {
+                  clearInterval(interval);
+                  currentNumCourses = actualNumCourses;
+                  currentTotalHours = actualTotalHours;
+                  currentNumCategories = actualNumCategories;
+              }
+
+              // Mettre à jour les statistiques sur la page
+              document.getElementById("numCourses").innerText = currentNumCourses;
+              document.getElementById("totalHours").innerText = currentTotalHours;
+              document.getElementById("numCategories").innerText = currentNumCategories;
+          }, 100);
+      });
+    
+  </script>
+   <button class="language-toggle" onclick="window.location.href='https://money2make.github.io/en/courses'">EN/FR</button>
+  </body>
+  </html>

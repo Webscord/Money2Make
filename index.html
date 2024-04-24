@@ -1,294 +1,665 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 1500 hours of courses.">
-    <meta name="keywords" content="Website, money, argent">
-    <meta name="author" content="Felosi">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#07A0D6">
-    <link rel="shortcut icon" href="112.png" type="image/gif">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2000 hours of courses.">
+      <meta name="keywords" content="Website, money, argent">
+      <meta name="author" content="Felosi">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#07A0D6">
+      <link rel="shortcut icon" href="images/112.png" type="image/gif">
 
-    <!-- Open Graph Protocol -->
-    <meta property="og:url" content="index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Money2Make">
-    <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 1500 hours of courses.">
-    <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
+      <!-- Open Graph Protocol -->
+      <meta property="og:url" content="index.html">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Money2Make">
+      <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2000 hours of courses.">
+      <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
 
-    <title>Courses - Money2Make</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
-<style>
-    /* Additional CSS for the banner */
-    .banner-container {
-        position: relative;
-        width: 100%;
-        max-width: 600px; /* Adjust the maximum width as needed */
-        margin: 20px auto; /* Center the banner and add space from the top */
-        overflow: hidden; /* Hide overflow content */
-        border: 2px solid #ccc; /* Border for the box */
-        border-radius: 10px; /* Rounded corners for the box */
-    }
+      <title>Money2Make</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    .banner-image {
-        width: 100%; /* Full width for the image */
-        height: auto; /* Maintain aspect ratio */
-        display: block;
-    }
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
-    .banner-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Transparent dark background */
-        color: white;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .banner-content .text {
-        width: 50%;
-        float: left;
-    }
-
-    .banner-content .button {
-        width: 50%;
-        float: right;
-        text-align: right;
-    }
-
-    .banner-content .button a {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #fff; /* Button background color */
-        color: #000; /* Button text color */
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-    .banner-content .button a:hover {
-        background-color: #000; /* Hover background color */
-        color: #fff; /* Hover text color */
-    }
-
-    /* Adjust margin for the header */
-    header {
-        margin-bottom: 20px;
-    }
-
-    .stats {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px auto;
-        max-width: 800px; /* Adjust the maximum width as needed */
-    }
-
-    .stats p {
-        font-size: 20px; /* Adjust the font size as needed */
-        margin: 0;
-    }
-
-    .stats span {
-        font-size: 24px; /* Adjust the font size as needed */
-    }
-
-    footer {
-        background-color: #383434; /* Grey color */
-        padding: 20px;
-        text-align: center;
-        margin-top: 20px;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer p {
-        margin: 0;
-    }
-
-    .footer-links {
-        margin-bottom: 20px;
-    }
-
-    .footer-links a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-        transition: color 0.3s ease;
-    }
-
-    .footer-links a:hover {
-        color: #07A0D6;
-    }
-
-    /* Add hover effect for home and courses links */
-    header nav ul li:nth-child(1):hover a,
-    header nav ul li:nth-child(2):hover a {
-        color: blue;
-    }
-
-    /* Center the hero section */
-    .hero {
-        text-align: center;
-    }
-</style>
 </head>
 <body>
-    <section class="hero">
-        <div class="container">
-            <h2 class="animate">Change and Learn how to make money</h2>
-            <div class="stats">
-                <p>Number of Courses: <span id="numCourses">00</span></p>
-                <p>Total Hours: +<span id="totalHours">0000</span></p>
-                <p>Number of Categories: <span id="numCategories">0</span></p>
-            </div>
-            <a href="https://discord.gg/ZSeKmxu4WJ" class="btn">Learn More</a>
+
+
+<div id="menu-bars" class="fas fa-bars"></div>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"> <span>Money</span>2Make </a>
+
+    <nav class="navbar">
+        <a href="https://money2make.github.io/">home</a>
+        <a href="https://money2make.github.io/#about">all courses</a>
+        <a href="https://money2make.github.io/terms" target="_blank" > terms of service</a>
+        <a href="https://money2make.github.io/privacy" target="_blank" >privacy policy</a>
+        <a href="https://money2make.github.io/contact" target="_blank" >contact us</a>
+    </nav>
+
+    <div class="follow">
+      <a href="https://discord.gg/ZSeKmxu4WJ" target="_blank" class="fab fa-discord"></a>
+      <a href="mailto:info.money2make@mail.com" target="_blank" class="fas fa-envelope"></a>
+      <a href="https://www.instagram.com/money2.make/" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+  <style>
+  /* Additional CSS for the banner */
+  .banner-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px; /* Adjust the maximum width as needed */
+      margin: 20px auto; /* Center the banner and add space from the top */
+      overflow: hidden; /* Hide overflow content */
+      border: 2px solid #ccc; /* Border for the box */
+      border-radius: 10px; /* Rounded corners for the box */
+  }
+
+  .banner-image {
+      width: 100%; /* Full width for the image */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+  }
+
+  .banner-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .banner-content .text {
+      width: 50%;
+      float: left;
+  }
+
+  .banner-content .button {
+      width: 50%;
+      float: right;
+      text-align: right;
+  }
+
+  .banner-content .button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff; /* Button background color */
+      color: #000; /* Button text color */
+      text-decoration: none;
+      border-radius: 5px;
+  }
+
+  .banner-content .button a:hover {
+      background-color: #000; /* Hover background color */
+      color: #fff; /* Hover text color */
+  }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+    :root{
+        --main-color:#8589ff;
+    }
+
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        outline: none; border:none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+        line-height: 1.5;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background: #000000;
+        padding-left: 30rem;
+    }
+
+    section{
+        padding:1rem 5%;
+        min-height: 100vh;
+    }
+
+    .heading{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        color:#fffafa;
+        text-transform: uppercase;
+    }
+
+    .heading span{
+        color:var(--main-color);
+        text-transform: uppercase;
+    }
+
+    .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        padding:.8rem 3rem;
+        background:var(--main-color);
+        color:#fff;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+
+    .btn:hover{
+        background:#111;
+        letter-spacing: .2rem;
+    }
+
+    header{
+        position: fixed;
+        top:0; left:0; bottom:0;
+        background:#222;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        flex-flow: column;
+        padding:8rem 2rem;
+        width:30rem;
+        text-align: center;
+    }
+
+    header .logo{
+        text-transform: uppercase;
+        color:#fff;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    header .logo span{
+        text-transform: uppercase;
+        color:var(--main-color);
+    }
+
+    header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color:#fff;
+        margin:2rem 0;
+    }
+
+    header .navbar a:hover{
+        letter-spacing: .2rem;
+        color:var(--main-color);
+    }
+
+    header .follow a{
+        font-size: 2.5rem;
+        color:#fff;
+        margin:0 .7rem;
+    }
+
+    header .follow a:hover{
+        color:var(--main-color);
+    }
+
+    #menu-bars{
+        position: fixed;
+        top:1rem; right: 1rem;
+        z-index: 10000;
+        background:var(--main-color);
+        color:#fff;
+        border-radius: .5rem;
+        padding:1rem 1.5rem;
+        font-size: 3rem;
+        cursor:pointer;
+        display: none;
+    }
+
+    .home{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    .home .image{
+        flex:1 1 40rem;
+    }
+
+    .home .image img{
+        width:100%;
+    }
+
+    .home .content{
+        flex:1 1 40rem;
+    }
+
+    .home .content .hi{
+        font-size: 2rem;
+        color:var(--main-color);
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+        color:#ffffff;
+        text-transform: uppercase;
+    }
+
+    .home .content h3 span{
+        color:var(--main-color);
+        text-transform: uppercase;
+    }
+
+    .home .content .info{
+        font-size: 2.5rem;
+        color:#ffffff;
+        padding:.5rem 0;
+    }
+
+    .home .content .text{
+        font-size: 1.7rem;
+        color:#666;
+        padding:.5rem 0;
+    }
+
+
+    .about .row-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        align-items: center;
+    }
+
+    .about .row-2 .box-container{
+        flex:1 1 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    .about .row-2 .box-container .box{
+        flex:1 1 15rem;
+        background:#fff;
+        padding:2rem;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    }
+
+    .about .row-2 .box-container .box h3{
+        color:var(--main-color);
+        font-size: 3rem;
+    }
+
+    .about .row-2 .box-container .box p{
+        color:#666;
+        font-size: 1.7rem;
+        padding-top: .5rem;
+    }
+
+    .service .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    .service .box-container .box{
+        flex:1 1 30rem;
+        text-align: center;
+        padding:2rem;
+        background:#fff;
+        border-radius: .5rem;
+        box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    }
+
+    .service .box-container .box i{
+        height:6rem;
+        width:6rem;
+        line-height: 6rem;
+        font-size: 2.5rem;
+        color:#fff;
+        background:var(--main-color);
+        border-radius: 50%;
+    }
+
+    .service .box-container .box h3{
+        color:#444;
+        font-size: 2.2rem;
+        padding-top: 1rem;
+    }
+
+    .service .box-container .box p{
+        color:#666;
+        font-size: 1.7rem;
+        padding-top: .5rem;
+    }
+
+    .portfolio .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    .portfolio .box-container .box{
+        flex:1 1 30rem;
+        height:25rem;
+        position: relative;
+        overflow:hidden;
+        border:1rem solid #fff;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        background:#fff;
+        border-radius: .5rem;
+    }
+
+    .portfolio .box-container .box img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+        border-radius: .5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .portfolio .box-container .box:hover img{
+        height:75%;
+        width:75%;
+    }
+
+    .portfolio .box-container .box h3{
+        position: absolute;
+        bottom:.5rem; left:1rem;
+        font-size: 2.5rem;
+        color:#333;
+        text-transform: uppercase;
+    }
+
+    .portfolio .box-container .box .icons{
+        position: absolute;
+        top:1rem; right:1rem;
+    }
+
+    .portfolio .box-container .box .icons a{
+        display: block;
+        height:4rem;
+        width:4rem;
+        border-radius: .5rem;
+        background: #eee;
+        color:#333;
+        font-size: 1.7rem;
+        line-height: 4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio .box-container .box .icons a:hover{
+        background:var(--main-color);
+        color:#fff;
+    }
+
+    .footer{
+        margin-top: 2rem;
+        font-size: 2rem;
+        padding:2.5rem;
+        text-align: center;
+        color:#666;
+        background: #242424;
+    }
+
+    .footer span{
+        color:var(--main-color);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* media queries  */
+    @media (max-width:991px){
+
+        html{
+            font-size: 55%;
+        }
+
+        body{
+            padding: 0;
+        }
+
+        #menu-bars{
+            display: initial;
+        }
+
+        header{
+            left:-120%;
+        }
+
+        header.active{
+            left:0%;
+        }
+
+        .cursor-1,
+        .cursor-2{
+            display: none;
+        }
+
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff; /* Blue button color */
+        color: #ffffff; /* White button text color */
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    @media (max-width:450px){
+
+        html{
+            font-size: 50%;
+        }
+
+        header{
+            width:100%;
+        }
+
+        .experience .box-container .box{
+            padding-right: 0;
+        }
+
+    }
+    </style>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Money<span>2Make </span> </h3>
+        <p class="info"> Change and Learn how to make money </p>
+        <p class="text"> Unlock Your Wealth Potential with 114+ courses. The best website to learn how to make money. There are more than 2000+ hours of courses.</p>
+        <a href="#about" class="btn">courses</a>
+    </div>
+
+    <div class="image">
+        <img src="images/112.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- service section starts  -->
+
+  
+<section class="service" id="service">
+<h1 class="heading"> <span> my </span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Wealth Potential</h3>
+            <p>Unlock Your Wealth Potential is your gateway to mastering the art of wealth creation. Start your transformative journey today and unleash the boundless possibilities that await. Welcome to the ultimate resource for unlocking your wealth potential.
+
+</p>
         </div>
-    </section>
 
+        <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Different themes</h3>
+            <p>Whether you're delving into the fundamentals of entrepreneurship, exploring investment strategies, or seeking innovative ways to grow your business, we have the expertise and insights to guide you every step of the way.</p>
+        </div>
 
-<div class="banner-container">
-    <img src="5.jpg" alt="Banner Image" class="banner-image">
+      <div class="box">
+          <i class="fas fa-mobile"></i>
+          <h3>digital marketing</h3>
+          <p>As the premier destination for aspiring entrepreneurs and seasoned professionals alike, our website is dedicated to providing the most comprehensive resources and tools to help you realize your financial goals.</p>
+      </div>
+
+    </div> 
+  </section>
+<!-- service section ends -->
+  <section class="about" id="about">
+  <h1 class="heading"> <span> all </span> courses </h1>
+  <div class="banner-container">
+    <img src="images/5.jpg" alt="Banner Image" class="banner-image">
     <div class="banner-content">
         <div class="text">
             <h1>Entrepreneurship</h1>
         </div>
-        <button onclick="window.location.href='https://money2make.github.io/entreprenariat'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/entreprenariat', '_blank')" style="float: left;">Go</button>
     </div>
-</div>
+  </div>
   </div>
   <div class="banner-container">
-    <img src="6.jpg" alt="Banner Image" class="banner-image">
+    <img src="images/6.jpg" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>Stock exchange</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/bourse'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/bourse', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="7.jpg" alt="Banner Image" class="banner-image">
+    <img src="images/7.jpg" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>Real Estate</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/immobilier'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/immobilier', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="8.png" alt="Banner Image" class="banner-image">
+    <img src="images/8.png" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>Trading</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/trading'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/trading', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="9.webp" alt="Banner Image" class="banner-image">
+    <img src="images/9.webp" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>E-Commerce</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/ecommerce'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/ecommerce', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="10.png" alt="Banner Image" class="banner-image">
+    <img src="images/10.png" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>SMMA</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/smma'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/smma', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="11.png" alt="Banner Image" class="banner-image">
+    <img src="images/11.png" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>Gym</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/gym'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/gym', '_blank')" style="float: left;">Go</button>
     </div>
   </div>
   <div class="banner-container">
-    <img src="12.jpg" alt="Banner Image" class="banner-image">
+    <img src="images/12.jpg" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
         <h1>Slow Money</h1>
       </div>
-      <button onclick="window.location.href='https://money2make.github.io/argentlent'" style="float: left;">Go</button>
+      <button onclick="window.open('https://money2make.github.io/courses/argentlent', '_blank')" style="float: left;">Go</button>
     </div>
     </div>
     <div class="banner-container">
-      <img src="13.jpg" alt="Banner Image" class="banner-image">
+      <img src="images/13.jpg" alt="Banner Image" class="banner-image">
       <div class="banner-content">
         <div class="text">
           <h1>Other</h1>
         </div>
-        <button onclick="window.location.href='https://money2make.github.io/autre'" style="float: left;">Go</button>
+        <button onclick="window.open('https://money2make.github.io/courses/autre', '_blank')" style="float: left;">Go</button>
       </div>
   </div>
-  <footer>
-      <div class="container">
-          <div class="footer-links">
-              <a href="https://money2make.github.io/terms" target="_blank">Terms of Service</a>
-              <a href="https://money2make.github.io/privacy" target="_blank">Privacy Policy</a>
-              <a href="https://money2make.github.io/contact" target="_blank">Contact Us</a>
-              <a href="https://discord.gg/ZSeKmxu4WJ" target="_blank">Discord</a>
-          </div>
-      </div>
-  </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Actual data values
-        var actualNumCourses = 113;
-        var actualTotalHours = 1500;
-        var actualNumCategories = 9;
 
-        // Initial values for countdown
-        var currentNumCourses = 0;
-        var currentTotalHours = 0;
-        var currentNumCategories = 0;
 
-        // Calculate step increment
-        var stepNumCourses = Math.ceil(actualNumCourses / 10);
-        var stepTotalHours = Math.ceil(actualTotalHours / 10);
-        var stepNumCategories = Math.ceil(actualNumCategories / 10);
 
-        // Update statistics count up
-        var interval = setInterval(function() {
-            // Update numbers gradually
-            currentNumCourses += stepNumCourses;
-            currentTotalHours += stepTotalHours;
-            currentNumCategories += stepNumCategories;
 
-            // Stop the interval when numbers reach their actual values
-            if (currentNumCourses >= actualNumCourses && currentTotalHours >= actualTotalHours && currentNumCategories >= actualNumCategories) {
-                clearInterval(interval);
-                currentNumCourses = actualNumCourses;
-                currentTotalHours = actualTotalHours;
-                currentNumCategories = actualNumCategories;
-            }
 
-            // Update statistics on the page
-            document.getElementById("numCourses").innerText = currentNumCourses;
-            document.getElementById("totalHours").innerText = currentTotalHours;
-            document.getElementById("numCategories").innerText = currentNumCategories;
-        }, 100);
-    });
-</script>
-<script>
-    // Add animation to welcome text
-    const welcomeText = document.querySelector('.animate');
-    welcomeText.classList.add('slide-in');
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
 </body>
 </html>

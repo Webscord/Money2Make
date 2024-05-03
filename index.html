@@ -2,7 +2,7 @@
   <html lang="en">
   <head>
       <meta charset="utf-8">
-      <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2000 hours of courses.">
+      <meta name="description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2500 hours of courses.">
       <meta name="keywords" content="Website, money, argent">
       <meta name="author" content="Felosi">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
       <meta property="og:type" content="website">
       <meta name="og:site_name" content="Money2Make">
       <meta property="og:title" content="Home">
-      <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2000 hours of courses.">
+      <meta property="og:description" content="Unlock Your Wealth Potential. The best website to learn how to make money. There are more than 2500 hours of courses.">
       <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
 
       <title>Money2Make - Home</title>
@@ -42,13 +42,13 @@
 
     <a href="#" class="logo"> <span>Money</span>2Make </a>
 
-    <nav class="navbar">
-        <a href="https://money2make.github.io/">home</a>
-        <a href="https://money2make.github.io/#about">all courses</a>
-        <a href="https://money2make.github.io/terms" target="_blank" > terms of service</a>
-        <a href="https://money2make.github.io/privacy" target="_blank" >privacy policy</a>
-        <a href="https://money2make.github.io/contact" target="_blank" >contact us</a>
-    </nav>
+  <nav class="navbar">
+      <a href="https://money2make.github.io/">Home</a>
+      <a href="https://money2make.github.io/#courses">All Courses</a>
+      <a href="https://money2make.github.io/terms" target="_blank" > Terms of Service</a>
+      <a href="https://money2make.github.io/privacy" target="_blank" >Privacy Policy</a>
+      <a href="https://money2make.github.io/contact" target="_blank" >Contact Us</a>
+  </nav>
 
     <div class="follow">
       <a href="https://discord.gg/ZSeKmxu4WJ" target="_blank" class="fab fa-discord"></a>
@@ -121,7 +121,6 @@
         box-sizing: border-box;
         outline: none; border:none;
         text-decoration: none;
-        text-transform: capitalize;
         transition: all .2s linear;
         line-height: 1.5;
     }
@@ -278,21 +277,21 @@
     }
 
 
-    .about .row-2{
+    .courses .row-2{
         display: flex;
         flex-wrap: wrap;
         gap:1.5rem;
         align-items: center;
     }
 
-    .about .row-2 .box-container{
+    .courses .row-2 .box-container{
         flex:1 1 40rem;
         display: flex;
         flex-wrap: wrap;
         gap:1.5rem;
     }
 
-    .about .row-2 .box-container .box{
+    .courses .row-2 .box-container .box{
         flex:1 1 15rem;
         background:#fff;
         padding:2rem;
@@ -300,12 +299,12 @@
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     }
 
-    .about .row-2 .box-container .box h3{
+    .courses .row-2 .box-container .box h3{
         color:var(--main-color);
         font-size: 3rem;
     }
 
-    .about .row-2 .box-container .box p{
+    .courses .row-2 .box-container .box p{
         color:#666;
         font-size: 1.7rem;
         padding-top: .5rem;
@@ -346,68 +345,6 @@
         color:#666;
         font-size: 1.7rem;
         padding-top: .5rem;
-    }
-
-    .portfolio .box-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap:1.5rem;
-    }
-
-    .portfolio .box-container .box{
-        flex:1 1 30rem;
-        height:25rem;
-        position: relative;
-        overflow:hidden;
-        border:1rem solid #fff;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-        background:#fff;
-        border-radius: .5rem;
-    }
-
-    .portfolio .box-container .box img{
-        height:100%;
-        width:100%;
-        object-fit: cover;
-        border-radius: .5rem;
-        position: relative;
-        z-index: 1;
-    }
-
-    .portfolio .box-container .box:hover img{
-        height:75%;
-        width:75%;
-    }
-
-    .portfolio .box-container .box h3{
-        position: absolute;
-        bottom:.5rem; left:1rem;
-        font-size: 2.5rem;
-        color:#333;
-        text-transform: uppercase;
-    }
-
-    .portfolio .box-container .box .icons{
-        position: absolute;
-        top:1rem; right:1rem;
-    }
-
-    .portfolio .box-container .box .icons a{
-        display: block;
-        height:4rem;
-        width:4rem;
-        border-radius: .5rem;
-        background: #eee;
-        color:#333;
-        font-size: 1.7rem;
-        line-height: 4rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    .portfolio .box-container .box .icons a:hover{
-        background:var(--main-color);
-        color:#fff;
     }
 
     .footer{
@@ -511,8 +448,8 @@
     <div class="content">
         <h3>Money<span>2Make </span> </h3>
         <p class="info"> Change and Learn how to make money </p>
-        <p class="text"> Unlock Your Wealth Potential with 120+ courses. The best website to learn how to make money. There are more than 2000+ hours of courses.</p>
-        <a href="#about" class="btn">courses</a>
+        <p class="text"> Unlock Your Wealth Potential with <span id="numCourses">00</span> courses. The best website to learn how to make money. There are more than <span id="totalHours">0000</span> hours of courses.</p>
+        <a href="#courses" class="btn">Courses</a>
     </div>
 
     <div class="image">
@@ -540,7 +477,7 @@
 
         <div class="box">
             <i class="fas fa-chart-line"></i>
-            <h3>Different themes</h3>
+            <h3>Different Themes</h3>
             <p>Whether you're delving into the fundamentals of entrepreneurship, exploring investment strategies, or seeking innovative ways to grow your business, we have courses and insights to guide you.</p>
         </div>
 
@@ -557,7 +494,7 @@
     </div> 
   </section>
 <!-- service section ends -->
-  <section class="about" id="about">
+  <section class="courses" id="courses">
   <h1 class="heading"> <span> all </span> courses </h1>
   <div class="banner-container">
     <img src="images/5.jpg" alt="Banner Image" class="banner-image">
@@ -573,7 +510,7 @@
     <img src="images/6.jpg" alt="Banner Image" class="banner-image">
     <div class="banner-content">
       <div class="text">
-        <h1>Stock exchange</h1>
+        <h1>Stock Exchange</h1>
       </div>
       <button onclick="window.open('https://money2make.github.io/courses/stock', '_blank')" style="float: left;">Go</button>
     </div>
@@ -673,6 +610,38 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Actual data values
+          var actualNumCourses = 140;
+          var actualTotalHours = 2500;
 
+          // Initial values for countdown
+          var currentNumCourses = 0;
+          var currentTotalHours = 0;
+
+          // Calculate step increment
+          var stepNumCourses = Math.ceil(actualNumCourses / 10);
+          var stepTotalHours = Math.ceil(actualTotalHours / 10);
+
+          // Update statistics count up
+          var interval = setInterval(function() {
+              // Update numbers gradually
+              currentNumCourses += stepNumCourses;
+              currentTotalHours += stepTotalHours;
+
+              // Stop the interval when numbers reach their actual values
+              if (currentNumCourses >= actualNumCourses && currentTotalHours >= actualTotalHours ) {
+                  clearInterval(interval);
+                  currentNumCourses = actualNumCourses;
+                  currentTotalHours = actualTotalHours;
+              }
+
+              // Update statistics on the page
+              document.getElementById("numCourses").innerText = currentNumCourses;
+              document.getElementById("totalHours").innerText = currentTotalHours;
+          }, 100);
+      });
+    </script>
 </body>
 </html>

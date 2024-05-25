@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="fr">
   <head>
       <meta charset="utf-8">
       <meta name="description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
@@ -15,11 +15,9 @@
       <meta name="og:site_name" content="Money2Make">
       <meta property="og:title" content="Accueil">
       <meta property="og:description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
-      <meta property="og:image" content="https://i.ibb.co/j42GW3v/money2make-favicon-color.png"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
-  <head>
-    <title>Money2Make</title>
-    <meta name="description" content="Website">
-    <meta name="color-theme" content="#00ffff">
+    <meta property="og:image" content="https://i.ibb.co/hHdvFWt/pixelcut-export.webp"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
+
+    <title>Money2Make - Accueil</title>
   </head>
   <body>
 
@@ -229,12 +227,6 @@ body{
             .footer .social-icons a:hover {
               transform: scale(1.2);
             }
-.blue-section {
-    background-color: #4e54c8;
-    color: #fff;
-    padding: 100px 0; /* Increase padding for more space above and below the newsletter section */
-}
-
 
         .white-section {
           background-color: #fff;
@@ -280,10 +272,38 @@ body{
         transform: translateY(0);
       }
 
+      .qa-box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto 20px; /* Center the box horizontally and add space below */
+        cursor: pointer;
+        max-width: 400px; /* Limit the width of the box */
+      }
+
+      .qa-box:hover {
+        border-color: #4e54c8; /* Change border color on hover */
+      }
+
+      .plus-symbol {
+        float: right;
+      }
+
+      .answer {
+        display: none;
+      }
+
+      .expanded .plus-symbol::after {
+        content: "-";
+      }
+
+      .expanded .answer {
+        display: block;
+      }
 
       .newsletter-form {
-          max-width: 600px;
-          margin: 0 auto;
+        max-width: 400px; /* Limit the width of the form */
+        margin: 0 auto 20px; /* Center the form horizontally and add space below */
       }
 
       .newsletter-form input[type="email"] {
@@ -318,14 +338,24 @@ body{
       .whiteboard-section h2 {
           color: #333;
       }
+
+      .blue-section {
+        background-color: #4e54c8;
+        color: #fff;
+        padding: 50px 0;
+        position: relative;
+      }
+
+
+
           </style>
 
     
     <div class="menu">
         <a href="vision.html">Vision</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">À Propos</a>
         <a href="mission.html">Mission</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contacter</a>
     </div>
 
     <div class="context">
@@ -347,11 +377,11 @@ body{
       </ul>
     </div>
 
-    <div class="section white-section">
+    <div class="section blue-section">
       <div class="content">
         <div class="text">
-          <h2 class="fade-in">Our Vision</h2>
-          <p class="fade-in">At Money2Make, our vision is to empower individuals with the knowledge and tools to unlock their wealth potential. Through expert guidance and practical resources, we aim to cultivate financial literacy, entrepreneurial skills, and investment savvy. Join us on the journey to financial independence and prosperity.</p>
+          <h2 class="fade-in">Notre Vision</h2>
+          <p class="fade-in">Chez Money2Make, notre vision est de donner aux individus les connaissances et les outils nécessaires pour libérer leur potentiel de richesse. Grâce à des conseils d’experts et à des ressources pratiques, nous visons à cultiver les connaissances financières, les compétences entrepreneuriales et le sens de l’investissement. Rejoignez-nous sur le chemin de l’indépendance financière et de la prospérité.</p>
         </div>
         <div class="image">
           <img src="images/1.jpg" alt="White Right Image" class="fade-in">
@@ -359,41 +389,63 @@ body{
       </div>
     </div>
 
-    <div class="section blue-section">
+    <div class="section white-section">
       <div class="content">
         <div class="image">
           <img src="images/3.webp" alt="Blue Left Image" class="fade-in">
         </div>
         <div class="text">
-          <h2 class="fade-in">About Us</h2>
-          <p class="fade-in">At Money2Make, we're more than just a website - we're a movement dedicated to transforming lives through financial empowerment. Our platform offers comprehensive resources, expert insights, and a supportive community to help individuals unleash their wealth potential. Join us as we redefine the path to financial freedom and success.</p>
+          <h2 class="fade-in">À Propos de nous</h2>
+          <p class="fade-in">Chez Money2Make, nous sommes plus qu'un simple site Web : nous sommes un mouvement dédié à la transformation des vies grâce à l'autonomisation financière. Notre plateforme offre des ressources complètes, des conseils d'experts et une communauté de soutien pour aider les individus à libérer leur potentiel de richesse. Rejoignez-nous alors que nous redéfinissons le chemin vers la liberté financière et le succès.</p>
         </div>
       </div>
     </div>
 
-    <div class="section white-section">
+    <div class="section blue-section">
       <div class="content">
         <div class="text">
-          <h2 class="fade-in">Our Mission</h2>
-          <p class="fade-in">Our mission at Money2Make is to revolutionize the way people approach wealth creation. We're committed to providing accessible education, empowering tools, and a supportive community to help individuals of all backgrounds achieve their financial goals. Together, we're building a future where everyone can unlock their full wealth potential.</p>
+          <h2 class="fade-in">Notre Mission</h2>
+          <p class="fade-in">Notre mission chez Money2Make est de révolutionner la façon dont les gens abordent la création de richesse. Nous nous engageons à fournir une éducation accessible, des outils responsabilisants et une communauté de soutien pour aider les personnes de tous horizons à atteindre leurs objectifs financiers. Ensemble, nous construisons un avenir où chacun pourra libérer tout son potentiel de richesse.</p>
         </div>
         <div class="image">
           <img src="images/2.jpg" alt="White Right Image" class="fade-in">
         </div>
       </div>
     </div>
-
-    <div class="blue-section" id="blue-section">
+    <div class="section white-section">
       <div class="content">
-        <div class="newsletter-form fade-in">
-          <h2>Subscribe to Our Newsletter</h2>
-          <form id="newsletter-form">
-            <input type="email" id="email" placeholder="Your Email">
-            <button type="button" onclick="checkEmail()">Send</button>
-          </form>
+        <div class="text">
+          <h2 class="fade-in">Q&A</h2>
+          <div class="qa-box" onclick="toggleAnswer(this)">
+            <h3>Est-ce sécuritaire?</h3>
+            <span class="plus-symbol">+</span>
+            <p class="answer">Oui! Mais nous ne sommes pas responsables de vos pertes.</p>
+          </div>
+          <div class="qa-box" onclick="toggleAnswer(this)">
+            <h3>Qui peut utiliser Money2Make?</h3>
+            <span class="plus-symbol">+</span>
+            <p class="answer">Seleument les majeurs car, Money2Make implique l'argent et l'investissement. Pas très pour les enfants!</p>
+            </div>
+            <div class="qa-box" onclick="toggleAnswer(this)">
+              <h3>Pourquoi utiliser Money2Make et pas une autre compagnie?</h3>
+              <span class="plus-symbol">+</span>
+              <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs services et pour notre support très rapide!</p>
+              </div>
+          </div>
+          <!-- Add more questions and answers as needed -->
         </div>
       </div>
     </div>
+    <div class="blue-section" id="blue-section">
+      <div class="content">
+        <div class="newsletter-form fade-in">
+          <h2>Abonnez-vous à notre newsletter</h2>
+          <form id="newsletter-form">
+            <input type="email" id="email" placeholder="Your Email">
+            <button type="button" onclick="checkEmail()">Envoyer</button>
+          </form>
+        </div>
+      </div>
 
     
       </div>
@@ -408,7 +460,7 @@ body{
               <a href="#" style="background-image: url('images/tiktok-logo.png');"></a>
               <a href="#" style="background-image: url('images/reddit-logo.png');"></a>
             </div>
-            <p class="text"> Contact us:<a href="mailto:info.money2make@mail.com">info.money2make@mail.com</a></p>
+            <p class="text"> Contact us:<a href="mailto:contact@bestwebsite.com">contact@bestwebsite.com</a></p>
             <p>Copyright © 2024 Felosi. All rights reserved.</p>
           </div>
     <script>
@@ -435,11 +487,24 @@ body{
       window.addEventListener('load', showVisible);
 
       function checkEmail() {
-        var email = document.getElementById("email").value;
-        if (email === "QyA2kL@money.com") {
-          window.location.href = "https://money2make.github.io/Aj8Ed73bKle3/";
-        }
+          var email = document.getElementById("email").value;
+          if (email === "QyA2kL@money.com") {
+              // Create a link element
+              var link = document.createElement('a');
+              // Set the href attribute to the path of the PDF file
+              link.href = 'Money2Make Formations.pdf';
+              // Set the download attribute with the file name you want the user to download
+              link.download = 'Money2Make Formations.pdf';
+              // Programmatically click the link to trigger the download
+              link.click();
+          }
       }
+
+
+      function toggleAnswer(question) {
+        question.classList.toggle("expanded");
+      }
+
     </script>
     </body>
     </html>

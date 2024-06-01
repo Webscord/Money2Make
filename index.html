@@ -460,18 +460,11 @@ body{
       }
           </style>
     <body>
-      <div class="menu">
-        <a href="#home">Acceuil</a>
-        <a href="#about">À Propos</a>
-        <a href="#mission">Mission</a>
-        <a href="#qa">Q&A</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#contact">Contact</a>
+
+      <div class="context">
+        <h1 class="fade-in">Money2Make</h1>
       </div>
 
-    <div class="context">
-      <h1 class="fade-in">Money2Make</h1>
-    </div>
 
     <div class="area">
       <ul class="circles">
@@ -494,8 +487,8 @@ body{
           <img src="images/3.webp" alt="Blue Left Image" class="fade-in">
         </div>
         <div class="text">
-          <h2 class="fade-in">À Propos de nous</h2>
-          <p class="fade-in">Chez Money2Make, nous sommes plus qu'un simple site Web : nous sommes un mouvement dédié à la transformation des vies grâce à l'autonomisation financière. Notre plateforme offre des ressources complètes, des conseils d'experts et une communauté de soutien pour aider les individus à libérer leur potentiel de richesse. Rejoignez-nous alors que nous redéfinissons le chemin vers la liberté financière et le succès.</p>
+          <h2 class="fade-in">Potentiel de richesse</h2>
+          <p class="fade-in">Chez Money2Make, nous sommes plus qu'un simple site Web. Débloquez votre potentiel de richesse est votre porte d'entrée pour maîtriser l'art de la création de richesse. Réalisez vos objectifs financiers dès maintenant avec Money2Make!</p>
         </div>
       </div>
     </div>
@@ -503,8 +496,8 @@ body{
     <div class="section blue-section">
       <div class="content">
         <div class="text">
-          <h2 class="fade-in">Notre Mission</h2>
-          <p class="fade-in">Notre mission chez Money2Make est de révolutionner la façon dont les gens abordent la création de richesse. Nous nous engageons à fournir une éducation accessible, des outils responsabilisants et une communauté de soutien pour aider les personnes de tous horizons à atteindre leurs objectifs financiers. Ensemble, nous construisons un avenir où chacun pourra libérer tout son potentiel de richesse.</p>
+          <h2 class="fade-in">Différents thèmes</h2>
+          <p class="fade-in">Que vous vous plongiez dans les fondamentaux de l'entrepreneuriat, que vous exploriez les stratégies d'investissement ou que vous recherchiez des moyens innovants pour développer votre entreprise, nous avons des formations et des connaissances pour vous guider.</p>
         </div>
         <div class="image">
           <img src="images/2.jpg" alt="White Right Image" class="fade-in">
@@ -518,8 +511,8 @@ body{
           <img src="images/1.jpg" alt="Blue Left Image" class="fade-in">
         </div>
         <div class="text">
-          <h2 class="fade-in">Notre Vision</h2>
-          <p class="fade-in">Chez Money2Make, notre vision est de donner aux individus les connaissances et les outils nécessaires pour libérer leur potentiel de richesse. Grâce à des conseils d’experts et à des ressources pratiques, nous visons à cultiver les connaissances financières, les compétences entrepreneuriales et le sens de l’investissement. Rejoignez-nous sur le chemin de l’indépendance financière et de la prospérité..</p>
+          <h2 class="fade-in">Commencez maintenant</h2>
+          <p class="fade-in">Commencez dès aujourd'hui votre voyage transformateur et libérez les possibilités illimitées qui vous attendent. Bienvenue dans la ressource ultime pour débloquer votre potentiel de richesse.</p>
         </div>
       </div>
     </div>
@@ -528,9 +521,9 @@ body{
     <div class="news-section" id="news-section">
       <div class="content">
         <div class="newsletter-form fade-in">
-          <h2>Abonnez-vous à notre newsletter</h2>
+          <h2>Accès aux formations</h2>
           <form id="newsletter-form">
-            <input type="email" id="email" placeholder="Votre Email">
+            <input type="email" id="email" placeholder="Code Secret">
             <button type="button" onclick="checkEmail()">Envoyer</button>
           </form>
         </div>
@@ -560,7 +553,7 @@ body{
               <span class="plus-symbol">+</span>
               <span class="minus-symbol" style="display: none;">-</span>
             </span>
-            <p class="answer">Seleument les majeurs car, Money2Make implique l'argent et l'investissement. Pas très pour les enfants!</p>
+            <p class="answer">Tout le monde! Nous voulons que le plus de personne possible ait accès à l'enseignement financier.</p>
           </div>
 
           <div class="qa-box" onclick="toggleAnswer(this)">
@@ -569,7 +562,7 @@ body{
               <span class="plus-symbol">+</span>
               <span class="minus-symbol" style="display: none;">-</span>
             </span>
-            <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs services et pour notre support très rapide!</p>
+            <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs formations et pour notre support très rapide!</p>
           </div>
           </div>
 
@@ -598,18 +591,18 @@ body{
         </div>
       <div class="footer-middle">
         <div class="links">
-          <p><a href="#">Privacy</a></p>
-          <p><a href="#">Terms</a></p>
+          <p><a href="https://money2make.github.io/autre/privacy">Privacy</a></p>
+          <p><a href="https://money2make.github.io/autre/terms">Terms</a></p>
           <!-- Add more links as needed -->
         </div>
         <div class="links">
-          <p><a href="#">Serveur</a></p>
-          <p><a href="#">Projet</a></p>
+          <p><a href="https://discord.gg/vrCUBh7Huk">Serveur</a></p>
+          <p><a href="https://github.com/Money2Make/Money2Make.github.io">Projet</a></p>
             <!-- Add more links as needed -->
         </div>
         <div class="links">
           <p><a href="#">Informations</a></p>
-          <p><a href="#">Partenariats</a></p>
+          <p><a href="https://discord.gg/sjhaEJQcgg">Partenariats</a></p>
           <!-- Add more links as needed -->
         </div>
       </div>
@@ -644,7 +637,7 @@ body{
 
       function checkEmail() {
           var email = document.getElementById("email").value;
-        if (email === "Md4Jd9@money.com") {
+        if (email === "Yr8J0mDp2") {
               // Create a link element
               var link = document.createElement('a');
               // Set the href attribute to the path of the PDF file

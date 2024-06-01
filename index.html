@@ -361,53 +361,6 @@ body{
         transform: translateY(0);
       }
 
-      .qa-box {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        position: relative; /* Set position relative */
-        padding: 10px;
-        margin: 0 auto 20px; /* Center the box horizontally and add space below */
-        cursor: pointer;
-        max-width: 400px; /* Limit the width of the box */
-      }
-
-      .qa-box:hover {
-        border-color: #4e54c8; /* Change border color on hover */
-      }
-
-      .answer-toggle {
-        position: absolute; /* Set position absolute */
-        top: 50%; /* Center vertically */
-        right: 10px; /* Align to the right */
-        transform: translateY(-50%); /* Adjust vertically */
-      }
-
-      .plus-symbol {
-        float: none; /* Remove float */
-        font-size: 24px;
-        color: blue;
-        display: inline-block;
-        margin: 0 auto; /* Center horizontally */
-      }
-
-      .minus-symbol {
-        font-size: 24px; /* Increase font size */
-        color: blue; /* Change color to blue */
-      }
-
-      
-      .answer {
-        display: none;
-      }
-
-      .expanded .plus-symbol::after {
-        content: "-";
-      }
-
-      .expanded .answer {
-        display: block;
-      }
-
       .newsletter-form {
         max-width: 400px; /* Limit the width of the form */
         margin: 0 auto 20px; /* Center the form horizontally and add space below */
@@ -528,43 +481,6 @@ body{
           </form>
         </div>
       </div>
-            <!-- Add more questions and answers as needed -->
-          </div>
-        </div>
-      </div>
-    
-    <div class="section white-section">
-      <div class="content">
-        <div class="text">
-          <h2 class="fade-in">Q&A</h2>
-          
-          <div class="qa-box" onclick="toggleAnswer(this)">
-            <h3>Est-ce sécuritaire?</h3>
-            <span class="answer-toggle">
-              <span class="plus-symbol">+</span>
-              <span class="minus-symbol" style="display: none;">-</span>
-            </span>
-            <p class="answer">Oui! Mais nous ne sommes pas responsables de vos pertes.</p>
-          </div>
-
-          <div class="qa-box" onclick="toggleAnswer(this)">
-            <h3>Qui peut utiliser Money2Make?</h3>
-            <span class="answer-toggle">
-              <span class="plus-symbol">+</span>
-              <span class="minus-symbol" style="display: none;">-</span>
-            </span>
-            <p class="answer">Tout le monde! Nous voulons que le plus de personne possible ait accès à l'enseignement financier.</p>
-          </div>
-
-          <div class="qa-box" onclick="toggleAnswer(this)">
-            <h3>Pourquoi utiliser Money2Make et pas une autre compagnie?</h3>
-            <span class="answer-toggle">
-              <span class="plus-symbol">+</span>
-              <span class="minus-symbol" style="display: none;">-</span>
-            </span>
-            <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs formations et pour notre support très rapide!</p>
-          </div>
-          </div>
 
               <!-- Add more questions and answers as needed -->
             </div>

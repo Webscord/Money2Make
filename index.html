@@ -1,31 +1,23 @@
   <!DOCTYPE html>
   <html lang="fr">
   <head>
-<meta charset="utf-8">
-<meta property="og:title" content="Accueil">
-<meta property="og:description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
-<meta property="og:type" content="website">
-<meta name="og:site_name" content="Money2Make">
-<meta property="og:url" content="index.html">
-<meta property="og:image" content="https://i.ibb.co/hHdvFWt/pixelcut-export.webp">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:site" content="Money2Make">
-<meta name="twitter:title" content="Accueil">
-<meta name="twitter:description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image:src" content="https://i.ibb.co/hHdvFWt/pixelcut-export.webp">
-<meta name="theme-color" content="#07A0D6">
-    
+      <meta charset="utf-8">
+      <meta name="description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
       <meta name="keywords" content="Website, money, argent">
       <meta name="author" content="Felosi">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#07A0D6">
+      <link rel="shortcut icon" href="images/112.png" type="image/gif">
 
       <!-- Open Graph Protocol -->
+      <meta property="og:url" content="index.html">
+      <meta property="og:type" content="website">
+      <meta name="og:site_name" content="Money2Make">
+      <meta property="og:title" content="Accueil">
+      <meta property="og:description" content="Débloquez votre potentiel financier. Le meilleur site pour apprendre à gagner de l'argent. Il y a plus de 5000 heures de formations.">
+    <meta property="og:image" content="https://i.ibb.co/hHdvFWt/pixelcut-export.webp"> <!-- Replace "your_image_url_here.jpg" with the URL of your image -->
 
     <title>Money2Make - Accueil</title>
-<link rel="icon" href="https://i.ibb.co/bFfmBds/112.png">
   </head>
   <body>
 
@@ -283,6 +275,7 @@ body{
       .qa-box {
         border: 1px solid #ccc;
         border-radius: 5px;
+        position: relative; /* Set position relative */
         padding: 10px;
         margin: 0 auto 20px; /* Center the box horizontally and add space below */
         cursor: pointer;
@@ -293,10 +286,27 @@ body{
         border-color: #4e54c8; /* Change border color on hover */
       }
 
-      .plus-symbol {
-        float: right;
+      .answer-toggle {
+        position: absolute; /* Set position absolute */
+        top: 50%; /* Center vertically */
+        right: 10px; /* Align to the right */
+        transform: translateY(-50%); /* Adjust vertically */
       }
 
+      .plus-symbol {
+        float: none; /* Remove float */
+        font-size: 24px;
+        color: blue;
+        display: inline-block;
+        margin: 0 auto; /* Center horizontally */
+      }
+
+      .minus-symbol {
+        font-size: 24px; /* Increase font size */
+        color: blue; /* Change color to blue */
+      }
+
+      
       .answer {
         display: none;
       }
@@ -354,10 +364,8 @@ body{
         position: relative;
       }
 
-
-
           </style>
-
+    
     <div class="context">
       <h1 class="fade-in">Money2Make</h1>
     </div>
@@ -376,7 +384,7 @@ body{
         <li></li>
       </ul>
     </div>
-    
+
     <div class="section white-section">
       <div class="content">
         <div class="image">
@@ -404,21 +412,33 @@ body{
       <div class="content">
         <div class="text">
           <h2 class="fade-in">Q&A</h2>
+          
           <div class="qa-box" onclick="toggleAnswer(this)">
             <h3>Est-ce sécuritaire?</h3>
-            <span class="plus-symbol">+</span>
+            <span class="answer-toggle">
+              <span class="plus-symbol">+</span>
+              <span class="minus-symbol" style="display: none;">-</span>
+            </span>
             <p class="answer">Oui! Mais nous ne sommes pas responsables de vos pertes.</p>
           </div>
+
           <div class="qa-box" onclick="toggleAnswer(this)">
             <h3>Qui peut utiliser Money2Make?</h3>
-            <span class="plus-symbol">+</span>
-            <p class="answer">Seleument les majeurs car, Money2Make implique l'argent et l'investissement. Pas très pour les enfants!</p>
-            </div>
-            <div class="qa-box" onclick="toggleAnswer(this)">
-              <h3>Pourquoi utiliser Money2Make et pas une autre compagnie?</h3>
+            <span class="answer-toggle">
               <span class="plus-symbol">+</span>
-              <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs services et pour notre support très rapide!</p>
-              </div>
+              <span class="minus-symbol" style="display: none;">-</span>
+            </span>
+            <p class="answer">Seleument les majeurs car, Money2Make implique l'argent et l'investissement. Pas très pour les enfants!</p>
+          </div>
+
+          <div class="qa-box" onclick="toggleAnswer(this)">
+            <h3>Pourquoi utiliser Money2Make et pas une autre compagnie?</h3>
+            <span class="answer-toggle">
+              <span class="plus-symbol">+</span>
+              <span class="minus-symbol" style="display: none;">-</span>
+            </span>
+            <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs services et pour notre support très rapide!</p>
+          </div>
           </div>
           <!-- Add more questions and answers as needed -->
         </div>
@@ -476,7 +496,7 @@ body{
 
       function checkEmail() {
           var email = document.getElementById("email").value;
-          if (email === "Md4Jd9@money.com") {
+        if (email === "Md4Jd9@money.com") {
               // Create a link element
               var link = document.createElement('a');
               // Set the href attribute to the path of the PDF file
@@ -491,7 +511,19 @@ body{
 
       function toggleAnswer(question) {
         question.classList.toggle("expanded");
+        var plusSymbol = question.querySelector('.plus-symbol');
+        var minusSymbol = plusSymbol.nextElementSibling;
+
+        if (question.classList.contains("expanded")) {
+          plusSymbol.style.display = 'none'; // Hide the plus symbol
+          minusSymbol.style.display = 'inline-block'; // Show the minus symbol
+        } else {
+          plusSymbol.style.display = 'inline-block'; // Show the plus symbol
+          minusSymbol.style.display = 'none'; // Hide the minus symbol
+        }
       }
+
+
 
     </script>
     </body>

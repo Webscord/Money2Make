@@ -201,41 +201,121 @@ body{
     }
 
 }
-         .footer {
-              background-color: #333;
-              color: #fff;
-              padding: 30px 0;
-              text-align: center;
-              font-size: 14px;
-            }
-
-            .footer a {
-              color: #fff;
-              text-decoration: none;
-              margin: 0 10px;
-              transition: color 0.3s ease;
-            }
-
             .footer a:hover {
               color: #4e54c8;
             }
 
-            .footer p {
-              margin: 5px 0;
-            }
-
-            .footer .social-icons a {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              background-size: cover;
-              margin: 0 5px;
-              transition: transform 0.3s ease;
-            }
 
             .footer .social-icons a:hover {
               transform: scale(1.2);
             }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .footer-left,
+      .footer-middle,
+      .footer-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .links p {
+        margin: 5px 0;
+        flex-basis: 33.33%; /* Three columns */
+        text-align: left; /* Align text to the left */
+      }
+
+      .links a {
+        color: #fff; /* White color */
+        text-decoration: none;
+      }
+
+      .links a:hover {
+        color: #77aaff; /* Light blue color on hover */
+      }
+
+      .footer-left a {
+        color: #aaddff; /* Light blue color */
+      }
+
+      .footer-right iframe {
+        width: 100%;
+        height: 300px;
+      }
+
+      @media (min-width: 768px) {
+        .footer-middle {
+          flex-basis: auto; /* Let it adapt to content */
+          margin-right: 20px;
+          text-align: center; /* Center links on larger screens */
+        }
+
+        .footer-left,
+        .footer-middle {
+          flex-basis: calc(50% - 10px); /* Two columns, with margin */
+        }
+      }
+
+      /* Social media icons */
+      .social-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; /* Adjust spacing as needed */
+      }
+
+      .social-icons a {
+        display: inline-block;
+        width: 30px; /* Adjust icon size as needed */
+        height: 30px; /* Adjust icon size as needed */
+        margin-right: 10px; /* Add spacing between icons */
+        background-size: cover;
+      }
+
+      /* Individual icon styles */
+      .social-icons a[href*="facebook"] {
+        background-image: url('images/facebook-logo.png'); /* Path to Facebook icon */
+      }
+
+      .social-icons a[href*="twitter"] {
+        background-image: url('images/twitter-logo.png'); /* Path to Twitter icon */
+      }
+
+      .social-icons a[href*="instagram"] {
+        background-image: url('images/instagram-logo.png'); /* Path to Instagram icon */
+      }
+
+      .social-icons a[href*="telegram"] {
+        background-image: url('images/telegram-logo.png'); /* Path to Telegram icon */
+      }
+
+      .social-icons a[href*="youtube"] {
+        background-image: url('images/youtube-logo.png'); /* Path to YouTube icon */
+      }
+
+      .social-icons a[href*="pinterest"] {
+        background-image: url('images/pinterest-logo.png'); /* Path to Pinterest icon */
+      }
+
+      .social-icons a[href*="tiktok"] {
+        background-image: url('images/tiktok-logo.png'); /* Path to TikTok icon */
+      }
+
+      .social-icons a[href*="reddit"] {
+        background-image: url('images/reddit-logo.png'); /* Path to Reddit icon */
+      }
 
         .white-section {
           background-color: #fff;
@@ -346,14 +426,14 @@ body{
           padding: 10px;
           border: none;
           border-radius: 0 5px 5px 0;
-          background-color: #ff6f61;
+         background-color: #07A0D6;
           color: #fff;
           font-size: 16px;
           cursor: pointer;
       }
 
       .newsletter-form button:hover {
-          background-color: #ff2e63;
+        background-color: #065c7e; 
       }
 
       .whiteboard-section {
@@ -365,16 +445,30 @@ body{
       .whiteboard-section h2 {
           color: #333;
       }
-
+      
       .blue-section {
         background-color: #4e54c8;
         color: #fff;
-        padding: 50px 0;
+        padding: 0px 20;
         position: relative;
       }
-
+      .news-section {
+        background-color: #4e54c8;
+        color: #fff;
+        padding: 100px 0;
+        position: relative;
+      }
           </style>
-    
+    <body>
+      <div class="menu">
+        <a href="#home">Acceuil</a>
+        <a href="#about">À Propos</a>
+        <a href="#mission">Mission</a>
+        <a href="#qa">Q&A</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+      </div>
+
     <div class="context">
       <h1 class="fade-in">Money2Make</h1>
     </div>
@@ -417,6 +511,35 @@ body{
         </div>
       </div>
     </div>
+    
+    <div class="section white-section">
+      <div class="content">
+        <div class="image">
+          <img src="images/1.jpg" alt="Blue Left Image" class="fade-in">
+        </div>
+        <div class="text">
+          <h2 class="fade-in">Notre Vision</h2>
+          <p class="fade-in">Chez Money2Make, notre vision est de donner aux individus les connaissances et les outils nécessaires pour libérer leur potentiel de richesse. Grâce à des conseils d’experts et à des ressources pratiques, nous visons à cultiver les connaissances financières, les compétences entrepreneuriales et le sens de l’investissement. Rejoignez-nous sur le chemin de l’indépendance financière et de la prospérité..</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="news-section" id="news-section">
+      <div class="content">
+        <div class="newsletter-form fade-in">
+          <h2>Abonnez-vous à notre newsletter</h2>
+          <form id="newsletter-form">
+            <input type="email" id="email" placeholder="Votre Email">
+            <button type="button" onclick="checkEmail()">Envoyer</button>
+          </form>
+        </div>
+      </div>
+            <!-- Add more questions and answers as needed -->
+          </div>
+        </div>
+      </div>
+    
     <div class="section white-section">
       <div class="content">
         <div class="text">
@@ -449,37 +572,53 @@ body{
             <p class="answer">C'est simple. Parce ce que nous offrons les meilleurs services et pour notre support très rapide!</p>
           </div>
           </div>
-          <!-- Add more questions and answers as needed -->
-        </div>
-      </div>
-    </div>
-    <div class="blue-section" id="blue-section">
-      <div class="content">
-        <div class="newsletter-form fade-in">
-          <h2>Abonnez-vous à notre newsletter</h2>
-          <form id="newsletter-form">
-            <input type="email" id="email" placeholder="Your Email">
-            <button type="button" onclick="checkEmail()">Envoyer</button>
-          </form>
-        </div>
-      </div>
 
-    
-      </div>
-          <div class="footer">
-            <div class="social-icons">
-              <a href="#" style="background-image: url('images/facebook-logo.png');"></a>
-              <a href="#" style="background-image: url('images/twitter-logo.png');"></a>
-              <a href="#" style="background-image: url('images/instagram-logo.png');"></a>
-              <a href="#" style="background-image: url('images/telegram-logo.png');"></a>
-              <a href="#" style="background-image: url('images/youtube-logo.png');"></a>
-              <a href="#" style="background-image: url('images/pinterest-logo.png');"></a>
-              <a href="#" style="background-image: url('images/tiktok-logo.png');"></a>
-              <a href="#" style="background-image: url('images/reddit-logo.png');"></a>
+              <!-- Add more questions and answers as needed -->
             </div>
-            <p class="text"> Contact us:<a href="mailto:info.money2make@mail.com">info.money2make@mail.com</a></p>
+          </div>
+        </div>
+      <div class="footer">
+        <div class="footer-left">
+          <div class="social-icons">
+            <!-- Social media icons -->
+            <a href="#" style="background-image: url('images/facebook-logo.png');"></a>
+            <a href="#" style="background-image: url('images/twitter-logo.png');"></a>
+            <a href="#" style="background-image: url('images/instagram-logo.png');"></a>
+            <a href="#" style="background-image: url('images/telegram-logo.png');"></a>
+            <a href="#" style="background-image: url('images/youtube-logo.png');"></a>
+            <a href="#" style="background-image: url('images/pinterest-logo.png');"></a>
+            <a href="#" style="background-image: url('images/tiktok-logo.png');"></a>
+            <a href="#" style="background-image: url('images/reddit-logo.png');"></a>
+            <!-- Add more social media icons as needed -->
+          </div>
+          <div class="contact-info">
+            <p>Contact us: <a href="mailto:info.money2make@mail.com">info.money2make@mail.com</a></p>
             <p>Copyright © 2024 Felosi. All rights reserved.</p>
           </div>
+        </div>
+      <div class="footer-middle">
+        <div class="links">
+          <p><a href="#">Privacy</a></p>
+          <p><a href="#">Terms</a></p>
+          <!-- Add more links as needed -->
+        </div>
+        <div class="links">
+          <p><a href="#">Serveur</a></p>
+          <p><a href="#">Projet</a></p>
+            <!-- Add more links as needed -->
+        </div>
+        <div class="links">
+          <p><a href="#">Informations</a></p>
+          <p><a href="#">Partenariats</a></p>
+          <!-- Add more links as needed -->
+        </div>
+      </div>
+      <div class="footer-right">
+        <!-- Google Maps iframe for the map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.85746586856!2d-122.41953627415115!3d37.77492951235772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858075bdfc7e47%3A0x7a9b0f28b516f5f6!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1627469656503!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
     <script>
       function isInViewport(element) {
         const rect = element.getBoundingClientRect();
